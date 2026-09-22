@@ -3,9 +3,10 @@
 import { products } from "@/data/products";
 import Card from "@/ui/Card";
 import { useRouter, useSearchParams } from "next/navigation";
+import React from "react";
 import ReactPaginate from "react-paginate";
 
-export default function NewProduct() {
+function NewProductContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -18,9 +19,11 @@ export default function NewProduct() {
   const pageParam = Number(searchParams.get("page")) || 1;
 
   // جلوگیری از وارد کردن شماره صفحه نامعتبر
+  const pageCount = Math.ceil(newProducts.length / itemsPerPage);
+
   const currentPage = Math.min(
     Math.max(pageParam, 1),
-    Math.ceil(newProducts.length / itemsPerPage)
+    Math.max(pageCount, 1)
   );
 
   // محاسبه Offset
@@ -31,9 +34,6 @@ export default function NewProduct() {
     itemOffset,
     itemOffset + itemsPerPage
   );
-
-  // تعداد صفحات
-  const pageCount = Math.ceil(newProducts.length / itemsPerPage);
 
   // تغییر صفحه
   const handlePageClick = (event: { selected: number }) => {
@@ -110,5 +110,13 @@ export default function NewProduct() {
         )}
       </div>
     </div>
+  );
+}
+
+export default function NewProduct() {
+  return (
+    <React.Suspense fallback={null}>
+      <NewProductContent />
+    </React.Suspense>
   );
 }
