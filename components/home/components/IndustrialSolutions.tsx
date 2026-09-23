@@ -56,10 +56,11 @@ export function IndustrialSolutions() {
                                             <div className=" w-[160px] rounded-2xl  border  border-slate-200  bg-white  p-5  shadow-sm  transition-all  duration-300  hover:-translate-y-1  hover:shadow-lg">
                                                 <div className="relative mx-auto h-20 w-20">
                                                     <Image
-                                                        src="/img/package.png"
+                                                        src="/img/CategoryBannerGrid/package.png"
                                                         alt={category.name}
                                                         fill
                                                         className="object-contain"
+                                                        sizes="80px"
                                                     />
                                                 </div>
                                                 <p className="mt-4 text-center text-sm font-semibold text-slate-700 group-hover:text-sky-600">
@@ -97,7 +98,7 @@ export function IndustrialSolutions() {
                                         className="group"
                                     >
                                         <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
-                                            <div className="relative md:w[150px] h-[150px] lg:w-[200px]">
+                                            <div className="relative md:w-[150px] h-[150px] lg:w-[200px]">
                                                 <Image
                                                     src="/img/package.png"
                                                     alt={category.name}
