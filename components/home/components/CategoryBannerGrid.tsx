@@ -23,7 +23,7 @@ export default function CategoryBannerGrid() {
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-6">
-              <h3 className="text-white text-xl font-bold">{categories[0].title}</h3>
+              <h3 className="text-white text-xl font-bold dark:text-slate-950">{categories[0].title}</h3>
             </div>
           </div>
         </Link>
@@ -38,7 +38,7 @@ export default function CategoryBannerGrid() {
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-6">
-              <h3 className="text-white text-xl font-bold">{categories[1].title}</h3>
+              <h3 className="text-white text-xl font-bold dark:text-slate-950">{categories[1].title}</h3>
             </div>
           </div>
         </Link>
@@ -53,7 +53,7 @@ export default function CategoryBannerGrid() {
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-6">
-              <h3 className="text-white text-xl font-bold">{categories[2].title}</h3>
+              <h3 className="text-white text-xl font-bold dark:text-slate-950">{categories[2].title}</h3>
             </div>
           </div>
         </Link>
@@ -68,7 +68,7 @@ export default function CategoryBannerGrid() {
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-6">
-              <h3 className="text-white text-xl font-bold">{categories[3].title}</h3>
+              <h3 className="text-white text-xl font-bold dark:text-slate-950">{categories[3].title}</h3>
             </div>
           </div>
         </Link>
@@ -88,7 +88,7 @@ export default function CategoryBannerGrid() {
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-6">
-                <h3 className="text-white text-xl font-bold">{categories[0].title}</h3>
+                <h3 className="text-white text-xl font-bold dark:text-slate-950">{categories[0].title}</h3>
               </div>
             </div>
           </Link>
@@ -103,7 +103,7 @@ export default function CategoryBannerGrid() {
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-6">
-                <h3 className="text-white text-xl font-bold">{categories[1].title}</h3>
+                <h3 className="text-white text-xl font-bold dark:text-slate-950">{categories[1].title}</h3>
               </div>
             </div>
           </Link>
@@ -118,7 +118,7 @@ export default function CategoryBannerGrid() {
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-6">
-                <h3 className="text-white text-xl font-bold">{categories[2].title}</h3>
+                <h3 className="text-white text-xl font-bold dark:text-slate-950">{categories[2].title}</h3>
               </div>
             </div>
           </Link>
@@ -133,7 +133,7 @@ export default function CategoryBannerGrid() {
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-6">
-                <h3 className="text-white text-xl font-bold">{categories[3].title}</h3>
+                <h3 className="text-white text-xl font-bold dark:text-slate-950">{categories[3].title}</h3>
               </div>
             </div>
           </Link>
@@ -154,7 +154,7 @@ export default function CategoryBannerGrid() {
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-8">
-                <h3 className="text-white text-2xl font-bold">{categories[0].title}</h3>
+                <h3 className="text-white text-2xl font-bold dark:text-slate-950">{categories[0].title}</h3>
               </div>
             </div>
           </Link>
@@ -169,7 +169,7 @@ export default function CategoryBannerGrid() {
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-8">
-                <h3 className="text-white text-2xl font-bold">{categories[1].title}</h3>
+                <h3 className="text-white text-2xl font-bold dark:text-slate-950">{categories[1].title}</h3>
               </div>
             </div>
           </Link>
@@ -184,7 +184,7 @@ export default function CategoryBannerGrid() {
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-8">
-                <h3 className="text-white text-2xl font-bold">{categories[2].title}</h3>
+                <h3 className="text-white text-2xl font-bold dark:text-slate-950">{categories[2].title}</h3>
               </div>
             </div>
           </Link>
@@ -199,7 +199,7 @@ export default function CategoryBannerGrid() {
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-8">
-                <h3 className="text-white text-2xl font-bold">{categories[3].title}</h3>
+                <h3 className="text-white text-2xl font-bold dark:text-slate-950">{categories[3].title}</h3>
               </div>
             </div>
           </Link>

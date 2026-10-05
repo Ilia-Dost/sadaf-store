@@ -9,15 +9,15 @@ const sections: {
 }[] = [
         {
             id: "water",
-            title: "💧 آب و فاضلاب",
+            title: " آب و فاضلاب",
         },
         {
             id: "oil-gas",
-            title: "⛽ نفت و گاز",
+            title: " نفت و گاز",
         },
         {
             id: "petrochemical",
-            title: "🧪 پتروشیمی",
+            title: " پتروشیمی",
         },
     ];
 
@@ -42,7 +42,7 @@ export function IndustrialSolutions() {
                             key={section.id}
                             className="mb-16"
                         >
-                            <h2 className="mb-8 text-2xl text-black font-bold">
+                            <h2 className="mb-8 text-2xl text-black font-bold dark:text-white">
                                 {section.title}
                             </h2>
                             <div className="overflow-x-auto">
@@ -51,7 +51,7 @@ export function IndustrialSolutions() {
                                         <Link
                                             key={category.id}
                                             href={`/category/${category.slug}`}
-                                            className="group shrink-0"
+                                            className="group shrink-0 "
                                         >
                                             <div className=" w-[160px] rounded-2xl  border  border-slate-200  bg-white  p-5  shadow-sm  transition-all  duration-300  hover:-translate-y-1  hover:shadow-lg">
                                                 <div className="relative mx-auto h-20 w-20">
@@ -87,7 +87,7 @@ export function IndustrialSolutions() {
 
                     return (
                         <div key={section.id} className="mb-16">
-                            <h2 className="mb-8 text-2xl font-bold text-black">
+                            <h2 className="mb-8 text-2xl font-bold text-black dark:text-white">
                                 {section.title}
                             </h2>
                             <div className="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5">
@@ -97,7 +97,7 @@ export function IndustrialSolutions() {
                                         href={`/category/${category.slug}`}
                                         className="group"
                                     >
-                                        <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+                                        <div className="rounded-2xl border border-slate-200 bg-white dark:bg-[#f5f0e6] dark:border-slate-200 p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
                                             <div className="relative md:w-[150px] h-[150px] lg:w-[200px]">
                                                 <Image
                                                     src="/img/package.png"
