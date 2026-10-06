@@ -33,13 +33,13 @@ export default function All() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-10 px-4">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-slate-950 dark:to-red-950/40 py-10 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-800 mb-3">
+          <h1 className="text-4xl font-bold text-gray-800 mb-3 dark:text-white">
             🏭 همه محصولات
           </h1>
-          <p className="text-gray-500 text-lg">
+          <p className="text-gray-500 text-lg dark:text-white">
             مرور تمام دسته‌بندی‌ها و محصولات صنعتی صدف
           </p>
           <div className="w-24 h-1 bg-blue-500 mx-auto mt-4 rounded-full"></div>
@@ -76,10 +76,10 @@ export default function All() {
                           <div className="mr-8">
                             <div className="flex items-center gap-3 mb-4">
                               <div className="w-2 h-8 bg-blue-500 rounded-full"></div>
-                              <h3 className="text-xl font-semibold text-gray-800">
+                              <h3 className="text-xl font-semibold text-gray-800 dark:text-white">
                                 {subCategory.name}
                               </h3>
-                              <span className="text-sm text-gray-400 bg-gray-100 px-3 py-1 rounded-full">
+                              <span className="text-sm text-gray-400 bg-gray-100 px-3 py-1 rounded-full dark:text-black">
                                 {subProducts.length} محصول
                               </span>
                             </div>

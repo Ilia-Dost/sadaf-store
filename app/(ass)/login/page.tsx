@@ -35,7 +35,7 @@ export default function Login() {
   };
 
   return (
-    <div className="flex min-h-screen bg-slate-50 px-4 items-start justify-center pt-12 md:items-center md:pt-0">
+    <div className="flex min-h-screen bg-slate-50 px-4 items-start justify-center pt-12 md:items-center md:pt-0 dark:bg-slate-900">
       {show ? (
         <div className="w-[300px] rounded-2xl bg-green-400 p-4 shadow-lg">
           <div className="mb-4 space-y-2">
@@ -56,12 +56,12 @@ export default function Login() {
           </div>
         </div>
       ) : (
-        <div className="w-full max-w-md rounded-3xl border border-slate-200 bg-white p-8 shadow-xl">
+        <div className="w-full max-w-md rounded-3xl border border-slate-200 bg-white p-8 shadow-xl dark:bg-slate-900 dark:shadow-[0_8px_30px_rgba(255,255,255,0.25)]">
           <div className="mb-8 text-center">
-            <h1 className="text-3xl font-bold text-slate-900">
+            <h1 className="text-3xl font-bold text-slate-900 dark:text-white">
               ورود به حساب کاربری
             </h1>
-            <p className="mt-2 text-sm text-slate-500">
+            <p className="mt-2 text-sm text-slate-500 dark:text-white">
               فروشگاه اتصالات صنعتی صدف
             </p>
           </div>
@@ -74,7 +74,7 @@ export default function Login() {
             <div>
               <label
                 htmlFor="username"
-                className="mb-2 block text-sm font-medium text-slate-700"
+                className="mb-2 block text-sm font-medium text-slate-700 dark:text-white/85"
               >
                 نام کاربری
               </label>
@@ -82,7 +82,7 @@ export default function Login() {
               <div className="relative">
                 <User
                   size={18}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 dark:text-white"
                 />
                 <input
                   id="username"
@@ -103,7 +103,7 @@ export default function Login() {
                       message: "نام کاربری شما بیش از اندازه زیاد است",
                     },
                   })}
-                  className="h-12 w-full text-slate-700 rounded-xl border border-slate-300 pr-11 pl-4 outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-200"
+                  className="h-12 w-full text-slate-700 rounded-xl border border-slate-300 pr-11 pl-4 outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-200 dark:text-white"
                 />
               </div>
 
@@ -117,7 +117,7 @@ export default function Login() {
             <div>
               <label
                 htmlFor="email"
-                className="mb-2 block text-sm font-medium text-slate-700"
+                className="mb-2 block text-sm font-medium text-slate-700 dark:text-white"
               >
                 ایمیل
               </label>
@@ -125,7 +125,7 @@ export default function Login() {
               <div className="relative">
                 <Mail
                   size={18}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 dark:text-white"
                 />
                 <input
                   id="email"
@@ -138,7 +138,7 @@ export default function Login() {
                       message: "فرمت ایمیل صحیح نیست",
                     },
                   })}
-                  className="h-12 w-full text-slate-700 rounded-xl border border-slate-300 pr-11 pl-4 outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-200"
+                  className="h-12 w-full text-slate-700 rounded-xl border border-slate-300 pr-11 pl-4 outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-200 dark:text-white"
                 />
               </div>
 
@@ -158,7 +158,7 @@ export default function Login() {
             </button>
           </form>
 
-          <div className="mt-8 border-t border-slate-200 pt-5 text-center text-sm text-slate-500">
+          <div className="mt-8 border-t border-slate-200 pt-5 text-center text-sm text-slate-500 dark:text-white">
             صدف | فروشگاه اتصالات صنعتی
           </div>
         </div>

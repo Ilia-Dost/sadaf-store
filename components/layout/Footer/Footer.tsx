@@ -52,19 +52,19 @@ export default function Footer() {
 
                             <li>
                                 <Link href="/industries/water" className="hover:text-sky-400">
-                                    💧 آب و فاضلاب
+                                     آب و فاضلاب
                                 </Link>
                             </li>
 
                             <li>
                                 <Link href="/industries/oil-gas" className="hover:text-pink-500">
-                                    ⛽ نفت و گاز
+                                     نفت و گاز
                                 </Link>
                             </li>
 
                             <li>
                                 <Link href="/industries/petrochemical" className="hover:text-green-400">
-                                    🧪 پتروشیمی
+                                     پتروشیمی
                                 </Link>
                             </li>
 

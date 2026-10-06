@@ -30,7 +30,7 @@ export default async function CategoryPage({
   return (
     <main className="mx-auto min-h-screen max-w-7xl px-5 py-12">
       <div className="mx-auto max-w-7xl space-y-10 py-10">
-        <h1 className="mb-10 text-3xl font-bold text-slate-800">
+        <h1 className="mb-10 text-3xl font-bold text-slate-800 dark:text-white">
           {category.name}
         </h1>
 
@@ -39,7 +39,7 @@ export default async function CategoryPage({
 
           return (
             <section key={subCategory.id} className="space-y-4 ">
-              <h2 className="text-xl font-semibold text-slate-800">
+              <h2 className="text-xl font-semibold text-slate-800 dark:text-white/85">
                 {subCategory.name}
               </h2>
 

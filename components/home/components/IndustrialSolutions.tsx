@@ -46,24 +46,23 @@ export function IndustrialSolutions() {
                                 {section.title}
                             </h2>
                             <div className="overflow-x-auto">
-                                <div className="flex gap-6 flex-nowrap ">
+                                <div className="flex gap-6 flex-nowrap h-52">
                                     {items.map((category) => (
                                         <Link
                                             key={category.id}
                                             href={`/category/${category.slug}`}
                                             className="group shrink-0 "
                                         >
-                                            <div className=" w-[160px] rounded-2xl  border  border-slate-200  bg-white  p-5  shadow-sm  transition-all  duration-300  hover:-translate-y-1  hover:shadow-lg">
-                                                <div className="relative mx-auto h-20 w-20">
-                                                    <Image
-                                                        src="/img/CategoryBannerGrid/package.png"
-                                                        alt={category.name}
-                                                        fill
-                                                        className="object-contain"
-                                                        sizes="80px"
-                                                    />
-                                                </div>
-                                                <p className="mt-4 text-center text-sm font-semibold text-slate-700 group-hover:text-sky-600">
+                                            <div className="w-[160px] h-[170px] rounded-2xl border border-slate-200 bg-white pt-8 mt-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:border-slate-700 dark:bg-slate-900 dark:shadow-[0_8px_30px_rgba(255,255,255,0.25)] dark:hover:shadow-[0_12px_40px_rgba(255,255,255,0.4)]">                                                <div className="relative mx-auto h-20 w-20">
+                                                <Image
+                                                    src="/img/CategoryBannerGrid/package.png"
+                                                    alt={category.name}
+                                                    fill
+                                                    className="object-contain"
+                                                    sizes="80px"
+                                                />
+                                            </div>
+                                                <p className="mt-4 text-center text-sm font-semibold text-slate-700 dark:text-white group-hover:text-sky-600">
                                                     {category.name}
                                                 </p>
                                             </div>
@@ -97,7 +96,7 @@ export function IndustrialSolutions() {
                                         href={`/category/${category.slug}`}
                                         className="group"
                                     >
-                                        <div className="rounded-2xl border border-slate-200 bg-white dark:bg-[#f5f0e6] dark:border-slate-200 p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+                                        <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:border-slate-700 dark:bg-slate-900 dark:shadow-[0_8px_30px_rgba(255,255,255,0.25)] dark:hover:shadow-[0_12px_40px_rgba(255,255,255,0.4)]">
                                             <div className="relative md:w-[150px] h-[150px] lg:w-[200px]">
                                                 <Image
                                                     src="/img/package.png"
@@ -106,7 +105,7 @@ export function IndustrialSolutions() {
                                                     className="object-cover"
                                                 />
                                             </div>
-                                            <p className="mt-4 text-center text-sm font-semibold text-slate-700 group-hover:text-sky-600">
+                                            <p className="mt-4 text-center text-sm font-semibold text-slate-700 dark:text-white group-hover:text-sky-600">
                                                 {category.name}
                                             </p>
                                         </div>
