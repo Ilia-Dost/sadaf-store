@@ -4,8 +4,10 @@ import Link from "next/link";
 import { useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { categories } from "@/data/categories";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function MobileMenu() {
+    const { t } = useLanguage();
     const [showMenu, setShowMenu] = useState(false);
     const [showProducts, setShowProducts] = useState(false);
     const [openCategory, setOpenCategory] = useState<string | null>(null);
@@ -126,10 +128,9 @@ export default function MobileMenu() {
                                     size={18}
                                     className={`
                                         transition
-                                        ${
-                                            showProducts
-                                                ? "rotate-180"
-                                                : ""
+                                        ${showProducts
+                                            ? "rotate-180"
+                                            : ""
                                         }
                                     `}
                                 />
@@ -182,11 +183,10 @@ export default function MobileMenu() {
                                                                 size={16}
                                                                 className={`
                                                                     transition
-                                                                    ${
-                                                                        openCategory ===
+                                                                    ${openCategory ===
                                                                         category.id
-                                                                            ? "rotate-180"
-                                                                            : ""
+                                                                        ? "rotate-180"
+                                                                        : ""
                                                                     }
                                                                 `}
                                                             />
@@ -195,8 +195,8 @@ export default function MobileMenu() {
                                                         {/* زیر دسته‌ها */}
                                                         {openCategory ===
                                                             category.id && (
-                                                            <ul
-                                                                className="
+                                                                <ul
+                                                                    className="
                                                                     mr-8
                                                                     mb-2
                                                                     border-r-2
@@ -204,20 +204,20 @@ export default function MobileMenu() {
 
                                                                     dark:border-slate-600
                                                                 "
-                                                            >
-                                                                {children.map(
-                                                                    (sub) => (
-                                                                        <li
-                                                                            key={
-                                                                                sub.id
-                                                                            }
-                                                                        >
-                                                                            <Link
-                                                                                href={`/category/${sub.slug}`}
-                                                                                onClick={
-                                                                                    closeMenu
+                                                                >
+                                                                    {children.map(
+                                                                        (sub) => (
+                                                                            <li
+                                                                                key={
+                                                                                    sub.id
                                                                                 }
-                                                                                className="
+                                                                            >
+                                                                                <Link
+                                                                                    href={`/subcategory/${sub.slug}`}
+                                                                                    onClick={
+                                                                                        closeMenu
+                                                                                    }
+                                                                                    className="
                                                                                     block
                                                                                     px-4 py-2
                                                                                     text-sm
@@ -228,16 +228,16 @@ export default function MobileMenu() {
                                                                                     dark:text-slate-300
                                                                                     dark:hover:text-sky-400
                                                                                 "
-                                                                            >
-                                                                                {
-                                                                                    sub.name
-                                                                                }
-                                                                            </Link>
-                                                                        </li>
-                                                                    )
-                                                                )}
-                                                            </ul>
-                                                        )}
+                                                                                >
+                                                                                    {
+                                                                                        sub.name
+                                                                                    }
+                                                                                </Link>
+                                                                            </li>
+                                                                        )
+                                                                    )}
+                                                                </ul>
+                                                            )}
                                                     </>
                                                 ) : (
                                                     <Link
@@ -287,8 +287,19 @@ export default function MobileMenu() {
                         </li>
 
                     </ul>
+                    <div className="mb-3.5 mr-3 border-t border-slate-200 pt-4">
+                        <Link
+                            href="/showallproduct"
+                            onClick={() => setShowProducts(false)}
+                            className="inline-flex items-center gap-2 rounded-xl bg-sky-500 px-4 py-2 text-sm font-medium text-white transition hover:bg-sky-600"
+                        >
+                            {t.buttons.viewAllProducts}
+                        </Link>
+                    </div>
                 </div>
+
             )}
+
         </div>
     );
 }
