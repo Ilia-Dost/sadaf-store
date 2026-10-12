@@ -4,10 +4,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { categories } from "@/data/categories";
-import { useLanguage } from "@/context/LanguageContext";
 
 export default function MobileMenu() {
-    const { t } = useLanguage();
     const [showMenu, setShowMenu] = useState(false);
     const [showProducts, setShowProducts] = useState(false);
     const [openCategory, setOpenCategory] = useState<string | null>(null);
@@ -293,7 +291,7 @@ export default function MobileMenu() {
                             onClick={() => setShowProducts(false)}
                             className="inline-flex items-center gap-2 rounded-xl bg-sky-500 px-4 py-2 text-sm font-medium text-white transition hover:bg-sky-600"
                         >
-                            {t.buttons.viewAllProducts}
+                            مشاهده همه محصولات
                         </Link>
                     </div>
                 </div>
