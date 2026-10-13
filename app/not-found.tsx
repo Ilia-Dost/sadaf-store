@@ -4,10 +4,8 @@ export default function NotFound() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-slate-50 px-5 flex items-center justify-center dark:bg-slate-950">
 
-      {/* Background decorations */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
 
-        {/* Top right glow */}
         <div
           className="
             absolute
@@ -22,7 +20,6 @@ export default function NotFound() {
           "
         />
 
-        {/* Bottom left glow */}
         <div
           className="
             absolute
@@ -37,7 +34,6 @@ export default function NotFound() {
           "
         />
 
-        {/* Center glow */}
         <div
           className="
             absolute
@@ -57,7 +53,6 @@ export default function NotFound() {
       </div>
 
 
-      {/* Main card */}
       <div
         className="
           relative
@@ -83,11 +78,9 @@ export default function NotFound() {
         "
       >
 
-        {/* Small top line */}
         <div className="mx-auto mb-8 h-1 w-16 rounded-full bg-blue-500" />
 
 
-        {/* 404 */}
         <div className="relative">
 
           <h1
@@ -112,7 +105,6 @@ export default function NotFound() {
             404
           </h1>
 
-          {/* Decorative dots */}
           <div className="absolute -right-2 top-2 h-3 w-3 rounded-full bg-blue-500/70 dark:bg-blue-400/70" />
 
           <div className="absolute -left-2 bottom-2 h-2 w-2 rounded-full bg-sky-500/70 dark:bg-sky-400/70" />
@@ -120,7 +112,6 @@ export default function NotFound() {
         </div>
 
 
-        {/* Title */}
         <h2
           className="
             mt-8
@@ -138,7 +129,6 @@ export default function NotFound() {
         </h2>
 
 
-        {/* Description */}
         <p
           className="
             mx-auto
@@ -158,7 +148,6 @@ export default function NotFound() {
         </p>
 
 
-        {/* Buttons */}
         <div
           className="
             mt-10
@@ -172,7 +161,6 @@ export default function NotFound() {
           "
         >
 
-          {/* Home */}
           <Link
             href="/"
             className="
@@ -216,7 +204,6 @@ export default function NotFound() {
           </Link>
 
 
-          {/* Products */}
           <Link
             href="/showallproduct"
             className="
@@ -255,7 +242,6 @@ export default function NotFound() {
         </div>
 
 
-        {/* Bottom brand */}
         <div className="mt-10">
 
           <Link
